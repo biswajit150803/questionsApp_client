@@ -30,7 +30,7 @@ const QuestionForm = () => {
     setError(null);
 
     try {
-      const response = await axios.post("http://localhost:3001/ask", {
+      const response = await axios.post("https://questionsapp-server.onrender.com/ask", {
         question,
       });
       const cleanedAnswer = cleanResponseText(response.data.answer);
